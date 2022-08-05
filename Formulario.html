@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="has-background-grey-lighter">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Parcial</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style.css"
+      media="screen"
+    />
+    <script type="text/javascript" src="forma.js"></script>
+  </head>
+  <body>
+    <div class="column is-half is-offset-one-quarter">
+      <article class="media-content">
+        <div class="message-body field">
+          <div class="content" id="contentprin">
+            <p style="font-size: 25px; text-align: center;">
+              <span>Web</span>
+              <span style="color: #a0a1a7;">Developer</span>
+            </p>
+            <form
+              class="box"
+              method="get"
+              action="tabla.html"
+              name="Formulario"
+            >
+              <p style="text-align: center;">Formulario de afiliación</p>
+              <br />
+              <div class="columns">
+                <div class="column">
+                  <div class="field">
+                    <div class="control has-icons-right">
+                      <input class="input" type="text" id="user" />
+                      <span class="icon is-small is-right">
+                        <i class="fas fa-user"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="control has-icons-right">
+                      <input class="input" type="email" id="email" />
+                      <span class="icon is-small is-right">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="control has-icons-right">
+                      <input class="input" type="text" id="tel" />
+                      <span class="icon is-small is-right">
+                        <i class="fas fa-phone-alt"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="field has-addons">
+                    <div class="control is-expanded">
+                      <input class="input" type="text" id="gustos" />
+                    </div>
+                    <div class="control">
+                      <a
+                        onclick="guardar()"
+                        class="button is-success is-outlined"
+                      >
+                        Gustos
+                      </a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="columns">
+                      <div
+                        class="column is-2"
+                        style="background-color: #27a844; border-radius: 7px;"
+                      ></div>
+                      <div class="column">
+                        <table
+                          class="table is-bordered is-fullwidth"
+                          id="tablagust"
+                        >
+                          <thead>
+                            <th>Gustos</th>
+                            <th>%</th>
+                            <th>edit</th>
+                          </thead>
+                          <tbody></tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="text-align: center;" id="contenedorbotones"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </article>
+    </div>
+  </body>
+</html>
